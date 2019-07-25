@@ -4,11 +4,18 @@
  */
 
 function getTwoSumIndices(){
-    const numbers = [2, 7, 11, 15];
+    const numbers = [2, 7, 11, 15, 7];
     const target = 9;
     const indicesArr = [];
 
-    for ( let i = 0; i < numbers.length; i++) {
+    let rest = target;
 
+    for ( let i = 0; i < numbers.length; i++) {
+        if( numbers[i] > rest ){
+            continue;
+        }
+        rest = rest - numbers[i];
+        indicesArr.push(i);
+        
     }
 }
