@@ -32,7 +32,7 @@ console.log(object4.a());
 
 /** Instantiation */
 class Player {
-    constructor(name, type){
+    constructor(name, type) {
         this.name = name;
         this.type = type;
     }
@@ -42,7 +42,7 @@ class Player {
 }
 
 class Wizard extends Player {
-    constructor(name, type){
+    constructor(name, type) {
         super(name, type);
     }
     play(){
