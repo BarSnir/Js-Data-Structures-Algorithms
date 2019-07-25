@@ -3,19 +3,24 @@
  * You may assume that each input would have exactly one solution, and you may not use the same element twice.
  */
 
-function getTwoSumIndices(){
-    const numbers = [2, 7, 11, 15, 7];
-    const target = 9;
+function getTwoSumIndices(target){
+    const numbers = [5, 6, 8, 2, 11, 15, 7];
     const indicesArr = [];
 
-    let rest = target;
-
+    let convertedObj = {};
     for ( let i = 0; i < numbers.length; i++) {
-        if( numbers[i] > rest ){
-            continue;
-        }
-        rest = rest - numbers[i];
-        indicesArr.push(i);
-        
+        convertedObj[numbers[i]] = true;
     }
+    for ( let i = 0; i < numbers.length; i++) {
+        var rest = target - numbers[i];
+        if(convertedObj.hasOwnProperty(rest)){
+            indicesArr.push(i);
+            break;
+        }
+    }
+    var indexRest = numbers.indexOf(rest);
+    indicesArr.push(indexRest);
+    return indicesArr;
 }
+
+console.log(getTwoSumIndices(24));
