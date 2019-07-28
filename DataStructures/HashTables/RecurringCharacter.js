@@ -33,7 +33,7 @@ function firstRecurringCharacter(input) {
 
     for(let i in distanceObj) {
         let rest = parseInt(distanceObj[i][1]) - parseInt(distanceObj[i][0]);
-        if (!numState) {
+        if (!numState && Number.isInteger(rest)) {
             numState = rest;
             closerIndices = i;
             continue; 
