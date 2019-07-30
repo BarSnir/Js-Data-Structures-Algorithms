@@ -83,7 +83,4 @@ const myLinkedList = new DoublyLinkedList(10);
 myLinkedList.append(11);
 myLinkedList.prepend(13);
 myLinkedList.insert(2, 99);
-// myLinkedList.insert(3, 98);
-// myLinkedList.remove(3);
-// myLinkedList.remove(2);
 console.log(myLinkedList.printList());
