@@ -1,4 +1,4 @@
-//Stacks
+//Stacks-LIFO
 
 // google
 // udemy.com
@@ -9,7 +9,7 @@
 
 /** Solution --> LinkedLists (More Dynamic,Less memory space) */
 
-//Queues 
+//Queues-LILO 
 
 // Tim
 // Matt
@@ -17,6 +17,6 @@
 // Samir
 // Pavel
 
-/** (Arrays/LinkedLists) */
+/** (LinkedLists) */
 
 /** Solution --> LinkedLists (More Dynamic,Less memory space) */
