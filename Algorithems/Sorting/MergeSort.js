@@ -27,7 +27,7 @@ function merge(left, right){
      if(left[leftIndex] < right[rightIndex]){
        result.push(left[leftIndex]);
        leftIndex++;
-     } else{
+     } else{leftIndex
        result.push(right[rightIndex]);
        rightIndex++
     }
