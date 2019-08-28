@@ -27,8 +27,9 @@ function fibonacciRecursive(n) { //O(2^n);
 }
 
 const cachedFib = fibonacciMaster();
-cachedFib(100);
-console.log("\x1b[32m",`we calculate: ${calculationNum} times with cache with n = 100`);
+let cachedN = 2000;
+cachedFib(cachedN);
+console.log("\x1b[32m",`we calculate: ${calculationNum} times with cache with n = ${cachedN}`);
 
 fibonacciRecursive(35);
 console.log("\x1b[31m",`we calculate: ${calculationNum2} times without cache with n = 35`);
